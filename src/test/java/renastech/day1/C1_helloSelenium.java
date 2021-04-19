@@ -10,6 +10,7 @@ public class C1_helloSelenium {
 
         //Create Connection between selenium and browser
         //setup browser type
+        //
         WebDriverManager.chromedriver().setup();
 
         //Create an instance of chromedriver to be able to test with chrome
