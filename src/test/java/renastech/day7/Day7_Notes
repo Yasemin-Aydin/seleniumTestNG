@@ -11,3 +11,17 @@ WINDOWS/TABS
 
 	How to get all of the window handles of the currenly opened tabs/windows?
 		-> driver.getWindowHandles() --> will return a SET of string that contains all the windows or tabs that you have.
+
+
+Using Intelije Git Tools :
+After creating your repository in remote repository (github) and connecting with your local repositery (your local intelije)
+You will see Git extantions on top right of intelije as a 3 icon.
+Blue arrow is git pull.
+yellow arrow is git push.
+greeen tick is git commit.
+I will also add screenshot in the selenium channel
+
+configuration.properties
+//you will need to store impartant data
+//also changable datas
+//common use for store paths or enviroment details etc.
