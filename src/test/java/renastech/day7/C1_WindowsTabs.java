@@ -25,7 +25,7 @@ public class C1_WindowsTabs extends TestBase {
 
         System.out.println(" After new tab driver.getTitle() = " + driver.getTitle());
         //since we didnt change focus of driver title will still be same
-        Set<String> allWindows=driver.getWindowHandles();
+        Set<String> allWindows=driver.getWindowHandles();//
 
         for (String window: allWindows){
             driver.switchTo().window(window);
