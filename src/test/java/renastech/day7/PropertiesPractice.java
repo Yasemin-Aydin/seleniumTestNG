@@ -1,6 +1,7 @@
 package renastech.day7;
 
 import org.testng.annotations.Test;
+import renastech.utilities.PropertiesReadingUtil;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -43,5 +44,11 @@ public class PropertiesPractice {
         System.out.println("properties.getProperty(\"SmartBear_url\") = " + properties.getProperty("SmartBear_url"));
         System.out.println("properties.getProperty(\"SmartBear_username\") = " + properties.getProperty("SmartBear_username"));
 
+    }
+
+    @Test
+    public void TC3_gettingFromUtils(){
+        System.out.println("PropertiesReadingUtil.getProperties(\"browser\") = " + PropertiesReadingUtil.getProperties("browser"));
+        System.out.println("PropertiesReadingUtil.getProperties(\"SmartBear_url\") = " + PropertiesReadingUtil.getProperties("SmartBear_url"));
     }
 }
