@@ -1,0 +1,23 @@
+
+-What is hardcoding?
+    -harcoding means passing every data inside of class without using any utils or files
+	-> if you hard code, to be able to change the test data
+	you have to go to each test and change the data from there.
+
+-Data Driven Testing is running the same test against different datas.
+	- instead of hardcoding tes data inside of test
+	- We created a properties file and we keep our test data in the file.
+
+
+PropertiesReading utility class
+	-> to be able to read from .properties type of file, we created util class.
+	-> steps to read from properties file:
+		1- Creating the object from Properties class
+		Properties properties = new Properties();
+		2- We need to OPEN the file in
+			FileInputStream file = new FileInputStream("path");
+		3- We need to load the file to properties object.
+			properties.load(file);
+		4- We close the previously opened file
+			file.close();
+//by hiding properties object and getting this object in the getter method is basicaaly an example of encapsulation
