@@ -20,4 +20,45 @@ PropertiesReading utility class
 			properties.load(file);
 		4- We close the previously opened file
 			file.close();
-//by hiding properties object and getting this object in the getter method is basicaaly an example of encapsulation
+//by hiding properties object and getting this object in the getter method is
+basically an example of encapsulation
+
+--> JavaScriptExecutor :
+    for some actions that selenium that able to handle
+
+	-JavaScriptExecutor is an Interface that helps to execute JavaScript through Selenium Webdriver.
+	-JavaScriptExecutor provides two methods "executescript" & "executeAsyncScript"
+	to run javascript on the selected window or current page.
+	-This method executes JavaScript in the context of the currently selected frame or window in Selenium.
+
+	JavaScriptExecutor:
+
+	1- We create javascriptExecutor object and we cast our WebDriver type instance into JavascriptExecutor type.
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+
+    2- Then we have access to the methods that are coming from JavascriptExecutor interface.
+    js.executeScript(Script,Arguments);
+
+    For arguments scrooldown , click ,window.open etc..
+    -- you will prefer to use when you are not able to do some actions with selenium
+
+Scroll in Selenium?
+     -with selenium itself you are not able to scrooll in the page you need :
+ 	1-JSExecutor
+
+
+
+DRIVER UTILITY
+
+- initialize the driver without coding too many line for each class
+- Being able to pass the same driver instance when calling methods from other classes
+
+Singleton Design pattern in DriverUtil:
+	-> We create a private constructor, and we also create a getter method
+	to allow users to create the instance of this class from getter.
+    -> You cannot create an object of that class because you made Priavete Constractor
+
+Example : https://www.tutorialspoint.com/design_pattern/singleton_pattern.htm
+
+--> Headless browser: The only difference between regular browser,
+headles-browser is: headless ones does not get open in the machine.
