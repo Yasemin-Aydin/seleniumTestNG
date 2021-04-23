@@ -68,7 +68,7 @@ headles-browser is: headless ones does not get open in the machine.
 
 
 ACTIONS:
-Actions interface is a collection of individual Action that you want to perform.
+Actions class is a collection of individual Action that you want to perform.
 	-> Actions class allows us to handle mouse and keyboard actions on the web pages.
 	    For Example :
 		-> hover over : moveToElement
@@ -77,6 +77,6 @@ Actions interface is a collection of individual Action that you want to perform.
 		-> clickAndHold: clicks onto something and waits for next command
 		-> release :
 
-		1- To get Actions methods, we need to create the instance of the actions interface.
+		1- To get Actions methods, we need to create the instance of the actions class.
 		2- And pass the driver instance into the constructor.
 		3- We must use : perform() method at the end to be able to perform any actions method.
