@@ -57,8 +57,11 @@ Singleton Design pattern in DriverUtil:
 	-> We create a private constructor, and we also create a getter method
 	to allow users to create the instance of this class from getter.
     -> You cannot create an object of that class because you made Priavete Constractor
+    --there will be always one instance of driver with singleton design pattern
+    --achive our gol from one instance
 
 Example : https://www.tutorialspoint.com/design_pattern/singleton_pattern.htm
 
 --> Headless browser: The only difference between regular browser,
 headles-browser is: headless ones does not get open in the machine.
+--headles one will excute your code faster.
