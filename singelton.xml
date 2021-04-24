@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regrassion">
+    <test name="RegrassionDay9">
+        <packages>
+            <package name="renastech.day9"></package>
+        </packages>
+    </test>
+
+</suite>

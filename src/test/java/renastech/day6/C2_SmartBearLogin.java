@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import renastech.utilities.BrowserUtils;
 import renastech.utilities.SmartBearUtils;
@@ -39,7 +40,6 @@ public class C2_SmartBearLogin {
         BrowserUtils.wait(2);
         driver.close();
     }
-
     @Test
     public void TC1_smartBearLoginVerification(){
 
