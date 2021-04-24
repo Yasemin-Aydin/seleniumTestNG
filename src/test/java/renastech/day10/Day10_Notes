@@ -12,3 +12,12 @@
 
         BrowserUtils.wait(3);
         javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);",ifreme);
+
+
+Either for actions or jsexcuter first you need to create connection the place that they are going to work which is driver
+    in actions class created with constracturor and it has webdriver so you can pass
+            Actions actions=new Actions(DriverUtil.getDriver());
+
+   in jsexcuter since it has no constractor to make jsexcuter to understand where is going to be connect which is driver
+   //you need to cast with driver
+           JavascriptExecutor javascriptExecutor=(JavascriptExecutor) DriverUtil.getDriver();

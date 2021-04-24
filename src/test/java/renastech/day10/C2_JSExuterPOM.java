@@ -34,7 +34,6 @@ public class C2_JSExuterPOM {
         actions.moveToElement(ifreme).perform();
 
             //2.JS excuter
-
         JavascriptExecutor javascriptExecutor=(JavascriptExecutor) DriverUtil.getDriver();
         //to make jsexecuter works you need to do casting between driver and jsexcuter
 
