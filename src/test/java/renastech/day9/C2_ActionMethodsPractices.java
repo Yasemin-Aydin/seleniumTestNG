@@ -44,4 +44,56 @@ public class C2_ActionMethodsPractices extends TestBase2 {
     //then click on edit button
     //then accept the allert that pops up
 
+    @Test
+    public void TC2_rightClickExample(){
+        DriverUtil.getDriver().get("http://demo.guru99.com/test/simple_context_menu.html");
+
+        //right click to right click button
+        WebElement rightClickButton=DriverUtil.getDriver().findElement(By.xpath("//span[.='right click me']"));
+
+        actions=new Actions(DriverUtil.getDriver());
+        actions.contextClick(rightClickButton).perform(); //this will right click on the element
+
+        //then click on edit button
+        WebElement editButton=DriverUtil.getDriver().findElement(By.xpath("//span[.='Edit']"));
+        editButton.click();
+
+        //then accept the allert that pops up
+        Alert alert=DriverUtil.getDriver().switchTo().alert();
+        alert.accept();
+
+    }
+
+    //go to http://demo.guru99.com/test/drag_drop.html
+    //drag bank word to account section and drop it
+    //then drag 5000 to amount  section and drop it
+    @Test
+    public void TC3_dragDropExample(){
+        DriverUtil.getDriver().get("http://demo.guru99.com/test/drag_drop.html");
+
+        //drag bank word to account section and drop it
+        //2 THINGS needs to be done
+        //first specify location of drag
+        //second specify location of drop
+
+        //locate bank element which is going to be where you dragging
+        WebElement dragFrom=DriverUtil.getDriver().findElement(By.xpath("//a[.=' BANK ']"));
+
+        WebElement dropTo=DriverUtil.getDriver().findElement(By.xpath("//ol[@id='bank']/li"));
+
+        actions=new Actions(DriverUtil.getDriver());
+        actions.dragAndDrop(dragFrom,dropTo).perform();
+        //this method is asking 2 element that specify location of drag and drop
+
+
+
+        //then drag 5000 to amount  section and drop it
+        WebElement dragFrom2=DriverUtil.getDriver().findElement(By.id("fourth"));
+        WebElement dropTo2=DriverUtil.getDriver().findElement(By.id("amt7"));
+
+        actions.dragAndDrop(dragFrom2,dropTo2).perform();
+    }
+
+
+
 }
