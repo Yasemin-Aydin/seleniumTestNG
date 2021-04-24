@@ -21,3 +21,31 @@ Either for actions or jsexcuter first you need to create connection the place th
    in jsexcuter since it has no constractor to make jsexcuter to understand where is going to be connect which is driver
    //you need to cast with driver
            JavascriptExecutor javascriptExecutor=(JavascriptExecutor) DriverUtil.getDriver();
+
+
+
+WEBDRIVERWAIT CLASS (Explicit Wait) Total 20
+	-> We use explicit wait If we are waiting for some specific webelement or action to happen.
+	- This will wait upto given seconds like implicit wait.(if condition happens on the third second wait will wait for 3 second)
+	(it wont wait whole time to get finish it will only wait until condition gets true)
+	- After 20 It will throw TimeOutException if condition not happens
+
+Examples :
+alertIsPresent()
+elementSelectionStateToBe()
+elementToBeClickable()
+elementToBeSelected()
+frameToBeAvaliableAndSwitchToIt()
+invisibilityOfTheElementLocated()
+invisibilityOfElementWithText()
+presenceOfAllElementsLocatedBy()
+presenceOfElementLocated()
+textToBePresentInElement()
+textToBePresentInElementLocated()
+textToBePresentInElementValue()
+titleIs()
+titleContains()
+visibilityOf()
+visibilityOfAllElements()
+visibilityOfAllElementsLocatedBy()
+visibilityOfElementLocated()
