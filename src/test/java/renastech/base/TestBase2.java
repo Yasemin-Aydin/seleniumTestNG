@@ -13,7 +13,7 @@ public abstract class TestBase2 { // you can say for abstraction example
 
     @BeforeMethod
     public void setup(){
-        DriverUtil.getDriver().manage().window().maximize();
+        DriverUtil.getDriver().manage().window().maximize();   //singelten driver in this test base
         DriverUtil.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
