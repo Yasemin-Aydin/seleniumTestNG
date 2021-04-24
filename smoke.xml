@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Smoke">
+    <test name="Smoke module 6">
+        <classes>
+            <class name="renastech.day6.C2_SmartBearLogin"></class>
+            <class name="renastech.day6.C3_JavaFakerExample"></class>
+        </classes>
+    </test>
+    <test name="Smoke module 7">
+        <classes>
+            <class name="renastech.day7.C1_WindowsTabs"></class>
+        </classes>
+    </test>
+    <test name="Smoke module 5">
+        <classes>
+            <class name="renastech.day5.C1_TestNGIntro"></class>
+        </classes>
+    </test>
+</suite>
