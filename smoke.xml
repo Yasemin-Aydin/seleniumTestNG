@@ -14,6 +14,8 @@
     <test name="Smoke module 5">
         <classes>
             <class name="renastech.day5.C1_TestNGIntro"></class>
+            <class name="renastech.day5.C2_TestNGPractice"></class>
+            <class name="renastech.day5.C3_TestNGPractice2"></class>
         </classes>
     </test>
 </suite>

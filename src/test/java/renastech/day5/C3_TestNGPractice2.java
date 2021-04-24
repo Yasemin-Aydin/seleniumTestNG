@@ -42,7 +42,7 @@ public class C3_TestNGPractice2 {
     @Test(priority = 3)
     public void TC2_test(){
         System.out.println("Test 2 is running!!");
-        String str="renastech";
+        String str="renastech54345";
         String str2="renastech";
 
         System.out.println("str = " + str);
