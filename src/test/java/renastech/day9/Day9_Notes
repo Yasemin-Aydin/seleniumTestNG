@@ -30,3 +30,7 @@ So, this will result in automation tests to fail. Automated test cases will fail
 Now, QA Engineer needs to walk through the whole code to update locators where necessary.
 CHANGING the element-locators in the duplicated code will consume a lot of time to only adjust locators.
  -Here, you can save this time by using the Page Object Model in our test automation framework.
+
+
+ // we dont want to store any locater inside utilities
+ //on the utilities you will store more generic commen methods that you might use  such as driver browser utils
