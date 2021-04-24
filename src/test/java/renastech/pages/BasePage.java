@@ -1,6 +1,7 @@
 package renastech.pages;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import renastech.utilities.DriverUtil;
 
 public abstract class  BasePage {
@@ -12,6 +13,8 @@ public abstract class  BasePage {
 //            2. @FindBy annotation to locate webElements.
 //            -> Using this FindBy annotation, help us to locate web elements.
 //3. Create methods related webelements
+
+    protected WebDriverWait webDriverWait=new WebDriverWait(DriverUtil.getDriver(),15);
 
     public BasePage(){
         PageFactory.initElements(DriverUtil.getDriver(),this);
